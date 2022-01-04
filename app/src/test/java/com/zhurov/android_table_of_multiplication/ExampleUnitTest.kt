@@ -1,4 +1,4 @@
-package com.table.multiplication
+package com.zhurov.android_table_of_multiplication
 
 import org.junit.Test
 

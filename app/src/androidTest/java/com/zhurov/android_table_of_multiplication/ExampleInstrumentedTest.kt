@@ -1,4 +1,4 @@
-package com.table.multiplication
+package com.zhurov.android_table_of_multiplication
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

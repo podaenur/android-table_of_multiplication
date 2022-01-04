@@ -1,4 +1,4 @@
-package com.table.multiplication.feature.login.presentation
+package com.zhurov.multiplication.feature.login.presentation
 
 import androidx.fragment.app.Fragment
 

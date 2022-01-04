@@ -1,8 +1,8 @@
-package com.table.multiplication.application
+package com.zhurov.android_table_of_multiplication.application
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
-import com.table.multiplication.di.appContext
+import com.zhurov.android_table_of_multiplication.di.appContext
 
 class App : Application() {
 

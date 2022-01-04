@@ -1,4 +1,4 @@
-package com.table.multiplication.di
+package com.zhurov.multiplication.di
 
 import android.content.Context
 
