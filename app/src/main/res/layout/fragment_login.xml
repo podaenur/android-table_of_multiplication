@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/login_container"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_container"
+    style="@style/FragmentContainerStyle"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    style="@style/FragmentContainerStyle">
+    android:layout_height="match_parent">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/title"
+        style="@style/TitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_element"
-        style="@style/TitleStyle"
         android:paddingHorizontal="@dimen/padding_horizontal"
+        android:text="@string/title_login_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/title_login_screen"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -25,10 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_top_bottom_of_title"
-        android:hint="@string/hint_name_input"
-        app:endIconMode="clear_text"
-        app:boxStrokeColor="@color/black"
         android:paddingHorizontal="@dimen/padding_horizontal"
+        app:boxStrokeColor="@color/black"
+        app:endIconMode="clear_text"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title">
@@ -38,6 +38,7 @@
             style="@style/TextInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/hint_name_input"
             android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -45,11 +46,11 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/start_button"
+        style="@style/ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_marginHorizontal="@dimen/padding_horizontal"
-        style="@style/ButtonStyle"
+        android:layout_marginBottom="@dimen/margin_bottom"
         android:text="@string/start_game"
         app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="parent"
