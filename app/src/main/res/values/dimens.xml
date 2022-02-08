@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_horizontal">16dp</dimen>
+    <dimen name="margin_element">20dp</dimen>
+    <dimen name="minimum_layout_param_game_text_input">70dp</dimen>
+    <dimen name="text_size_equation">48sp</dimen>
+    <dimen name="text_size_stopwatch">24sp</dimen>
+    <dimen name="margin_bottom">12dp</dimen>
+    <dimen name="margin_top_bottom_of_title">26dp</dimen>
+</resources>

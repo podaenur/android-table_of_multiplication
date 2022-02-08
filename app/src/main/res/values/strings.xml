@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">multiplication-table-game</string>
+    <string name="hint_name_input">Напиши свое имя</string>
+    <string name="start_game">Начать игру</string>
+    <string name="title_login_screen">Как тебя зовут?</string>
+    <string name="cancel">Cancel</string>
+    <string name="answer">Ответить</string>
+    <string name="question_mark">\?</string>
+    <string name="title_settings_screen">Во что играем?</string>
+    <string name="all_numbers">Все числа</string>
+    <string name="title_game_result">Твой результат</string>
+    <string name="multiplication">Умножение</string>
+    <string name="division">Деление</string>
+    <string name="nine">9</string>
+    <string name="eight">8</string>
+    <string name="seven">7</string>
+    <string name="six">6</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="end_game_question">Завершить игру?</string>
+    <string name="end_game_message">Результаты этой игры будут потеряны.</string>
+    <string name="continue_game">Продолжить игру</string>
+    <string name="exit_game">Выйти из игры</string>
+    <string name="finish_game">Завершить игру</string>
+    <string name="best_motivation">Отличный результат! Ура!</string>
+    <string name="good_motivation">Ты молодец, поучи еще немного чтобы быть лучшим!</string>
+    <string name="bad_motivation">Не растраивайся, немного поучи и все у тебя получится!</string>
+    <string name="cell_correct">Правильных:</string>
+    <string name="cell_error">Ошибок:</string>
+    <string name="cell_time">Твое время:</string>
 </resources>

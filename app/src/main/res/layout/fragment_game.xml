@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FragmentContainerStyle">
+
+    <include
+        android:id="@+id/cancel_button"
+        layout="@layout/text_view_cancel"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_element"
+        android:layout_width="wrap_content"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/equation"
+        app:layout_constraintEnd_toStartOf="@id/text_input_layout"
+        android:layout_width="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_equation"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/padding_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_input_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_input_layout"
+        tools:text="2 x 2 ="
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_element"
+        android:textAlignment="center"
+        android:paddingEnd="@dimen/padding_horizontal"
+        app:hintEnabled="false"
+        android:paddingHorizontal="@dimen/padding_horizontal"
+        app:boxStrokeColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/equation"
+        app:layout_constraintTop_toBottomOf="@id/cancel_button"
+        tools:ignore="RtlSymmetry">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input"
+            style="@style/TextInput"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/minimum_layout_param_game_text_input"
+            android:minHeight="@dimen/minimum_layout_param_game_text_input"
+            android:hint="@string/question_mark"
+            android:textAlignment="center"
+            android:maxLength="3"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Chronometer
+        android:id="@+id/stopwatch_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_element"
+        android:textSize="@dimen/text_size_stopwatch"
+        android:textColor="@color/black"
+        android:paddingHorizontal="@dimen/padding_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_indicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.LinearProgressIndicator"
+        android:paddingHorizontal="@dimen/padding_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:progress="0"
+        android:max="10"
+        app:trackColor="@color/gray"
+        app:indicatorColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/stopwatch_game"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answer_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+        style="@style/ButtonStyle"
+        android:text="@string/answer"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

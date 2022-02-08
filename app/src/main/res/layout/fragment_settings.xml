@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/FragmentContainerStyle">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_element"
+        style="@style/TitleStyle"
+        android:paddingHorizontal="@dimen/padding_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/title_settings_screen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.zhurov.android_table_of_multiplication.components.widget.button.CheckableButton
+        android:id="@+id/multiplication_checkbox"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+        style="@style/CheckableButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_element"
+        android:text="@string/multiplication"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/division_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <com.zhurov.android_table_of_multiplication.components.widget.button.CheckableButton
+        android:id="@+id/division_checkbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/division"
+        android:layout_marginEnd="@dimen/padding_horizontal"
+        style="@style/CheckableButton"
+        app:layout_constraintStart_toEndOf="@+id/multiplication_checkbox"
+        app:layout_constraintTop_toTopOf="@id/multiplication_checkbox" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_numbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_element"
+        app:constraint_referenced_ids="expression_two,expression_three,expression_four,
+        expression_five,expression_six,expression_seven,expression_eight,expression_nine"
+        app:flow_horizontalGap="@dimen/margin_element"
+        app:flow_horizontalStyle="spread_inside"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="@dimen/margin_element"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintEnd_toEndOf="@id/division_checkbox"
+        app:layout_constraintStart_toStartOf="@id/multiplication_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/multiplication_checkbox" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_two"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/two"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_three"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/three"
+        app:layout_constrainedWidth="true"
+         />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_four"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/four"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_five"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/five"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_six"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/six"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_seven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/seven"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_eight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/eight"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_nine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        style="@style/ButtonStyle"
+        android:text="@string/nine"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expression_all"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+        android:layout_marginTop="@dimen/margin_element"
+        android:text="@string/all_numbers"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flow_numbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
